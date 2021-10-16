@@ -27,8 +27,8 @@ experience:
     company_url: ''
     # company_logo: org-gc
     location: Miami, FL
-    date_start: '2020-01-02'
-    date_end: '2020-08-15'
+    date_start: 'Jan 2020'
+    date_end: 'Aug 2020'
     description: |2-
         Responsibilities include:
         
@@ -41,8 +41,8 @@ experience:
     company_url: ''
     # company_logo: org-x
     location: Miami, FL
-    date_start: '2017-10-16'
-    date_end: '2019-05-13'
+    date_start: 'Oct 2017'
+    date_end: 'May 2019'
     description: |2-
         * 360 hours of tutoring experience in total
         * CRLA (College Reading and Learning Certification) Level 3 certified;
