@@ -4,6 +4,8 @@ headless: true  # This file represents a page section.
 
 # ... Put Your Section Options Here (title etc.) ...
 
+title: Selected Publications
+
 content:
   # Page type to display. E.g. post, event, or publication.
   page_type: publication
@@ -22,5 +24,5 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 2
+  view: 3
 ---
