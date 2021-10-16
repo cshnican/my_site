@@ -10,7 +10,7 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
 slides: example
 url_pdf: ""
 publication_types:
-  - "1"
+  - "2"
 authors:
   - admin
   - Robert Ford
@@ -26,7 +26,7 @@ url_project: ""
 publication_short: In *ICW*
 url_source: ""
 url_video: ""
-title: "Speech adapts "
+title: Speech adapts to differences in dentition within and across populations
 doi: ""
 featured: true
 tags: []
