@@ -28,10 +28,6 @@ feature:
   icon: project-diagram
   icon_pack: fas
   name: Modeling
-- description:
-  icon: database
-  icon_pack: fas
-  name: Data analysis
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
