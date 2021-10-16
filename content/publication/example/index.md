@@ -17,7 +17,7 @@ abstract: "We test the hypothesis that a specific anatomical feature, the dental
   how the sounds used by individuals reflect the same phenomenon. The diverse
   findings converge on the same conclusion: speech adapts to anatomical
   differences within and across populations."
-slides: example
+slides: ""
 url_pdf: ""
 publication_types:
   - "2"
@@ -41,12 +41,14 @@ tags:
   - phonetics
   - evolution of language
   - data analysis
-projects:
-  - example
+projects: []
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
+  caption: "Image credit:
+    [**Unsplash**](https://www.nature.com/articles/s41598-020-80190-8/figures/2\
+    )"
   focal_point: ""
   preview_only: false
+  filename: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-020-80190-8/MediaObjects/41598_2020_80190_Fig2_HTML.png?as=webp
 date: 2013-07-01T00:00:00Z
 url_slides: ""
 publishDate: 2017-01-01T00:00:00Z
