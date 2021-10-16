@@ -18,7 +18,7 @@ abstract: "We test the hypothesis that a specific anatomical feature, the dental
   findings converge on the same conclusion: speech adapts to anatomical
   differences within and across populations."
 slides: ""
-url_pdf: ""
+url_pdf: "https://www.nature.com/articles/s41598-020-80190-8.pdf"
 publication_types:
   - "2"
 authors:
