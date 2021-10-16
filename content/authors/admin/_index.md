@@ -35,4 +35,4 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Hi! I'm a second-year Ph.D student at [Department of Brain and Cognitive Sciences at MIT](bcs.mit.edu). I'm currently working in [TedLab](tedlab.mit.edu), where I apply quantitative methods to look into various linguistic phenomena. Before, I was an undergraduate student majoring in mechanical engineering at [University of Miami](http://miami.edu/).
+Hi! I'm a second-year Ph.D student at [Department of Brain and Cognitive Sciences at MIT](http://bcs.mit.edu). I'm currently working in [TedLab](http://tedlab.mit.edu), where I apply quantitative methods to look into various linguistic phenomena. Before, I was an undergraduate student majoring in mechanical engineering at [University of Miami](http://miami.edu/).
