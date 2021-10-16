@@ -15,13 +15,13 @@ authors:
   - Caleb Everett
   - Sihan Chen
 author_notes: []
-publication: In *Wowchemy Conference*
+publication: "in *Scientific Reports* 11: 1066 (2021)"
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
   tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
   condimentum.
 url_dataset: ""
 url_project: ""
-publication_short: In *ICW*
+publication_short: ""
 url_source: ""
 url_video: ""
 title: Speech adapts to differences in dentition within and across populations
