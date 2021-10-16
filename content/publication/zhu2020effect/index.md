@@ -18,7 +18,7 @@ url_project: ""
 publication_short: ""
 url_source: ""
 url_video: ""
-title: Speech adapts to differences in dentition within and across populations
+title: Effect of intervertebral disc degeneration on mechanical and electric signals at the interface between disc and vertebra
 doi: ""
 featured: true
 tags:
