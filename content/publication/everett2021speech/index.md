@@ -42,8 +42,7 @@ tags:
 projects: []
 image:
   caption: "Image credit:
-    [**Unsplash**](https://www.nature.com/articles/s41598-020-80190-8/figures/2\
-    )"
+    [**Unsplash**](https://www.nature.com/articles/s41598-020-80190-8/figures/2\)"
   focal_point: ""
   preview_only: false
   filename: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-020-80190-8/MediaObjects/41598_2020_80190_Fig2_HTML.png?as=webp
