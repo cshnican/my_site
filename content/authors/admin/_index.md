@@ -28,7 +28,7 @@ organizations:
     url: mit.edu
 education:
   courses:
-    - course: BS
+    - course: B.S., Mechanical Engineering
       institution: University of Miami
       year: 2019
 email: ""
