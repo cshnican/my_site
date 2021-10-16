@@ -12,11 +12,9 @@ url_pdf: ""
 publication_types:
   - "2"
 authors:
-  - admin
-  - Robert Ford
-author_notes:
-  - Equal contribution
-  - Equal contribution
+  - Caleb Everett
+  - Sihan Chen
+author_notes: []
 publication: In *Wowchemy Conference*
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
   tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
