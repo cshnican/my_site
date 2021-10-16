@@ -26,9 +26,7 @@ authors:
   - Sihan Chen
 author_notes: []
 publication: "in *Scientific Reports* 11: 1066 (2021)"
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
-  tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin
-  condimentum.
+summary: ""
 url_dataset: ""
 url_project: ""
 publication_short: ""
@@ -49,19 +47,9 @@ image:
   focal_point: ""
   preview_only: false
   filename: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-020-80190-8/MediaObjects/41598_2020_80190_Fig2_HTML.png?as=webp
-date: 2013-07-01T00:00:00Z
+date: 2021-10-16T06:18:00.115Z
 url_slides: ""
 publishDate: 2017-01-01T00:00:00Z
 url_poster: ""
 url_code: ""
 ---
-
-{{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
