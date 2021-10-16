@@ -27,7 +27,7 @@ tags:
 projects: []
 image:
   caption: "Image credit:
-    [**Unsplash**](https://www.sciencedirect.com/science/article/abs/pii/S002192902030172X
+    [**Journal of Biomechanics**](https://www.sciencedirect.com/science/article/abs/pii/S002192902030172X
     )"
   focal_point: ""
   preview_only: false
