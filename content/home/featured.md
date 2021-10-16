@@ -4,7 +4,7 @@ headless: true  # This file represents a page section.
 
 # ... Put Your Section Options Here (title etc.) ...
 
-title: Recent Publications
+title: Selected Publications
 weight: 30
 
 content:
