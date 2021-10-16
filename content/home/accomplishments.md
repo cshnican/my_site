@@ -25,7 +25,7 @@ date_format: Jan 2006
 item:
 - certificate_url: https://www.citiprogram.org/verify/?wc934aac0-36b5-435c-b5d2-3ae61ddedbd5-45447429
   date_end: ""
-  date_start: "2021-10-7"
+  date_start: "2021-10-07"
   description: ""
   organization: CITI Program
   organization_url: http://www.citiprogram.org
