@@ -37,7 +37,10 @@ url_video: ""
 title: Speech adapts to differences in dentition within and across populations
 doi: ""
 featured: true
-tags: []
+tags:
+  - phonetics
+  - evolution of language
+  - data analysis
 projects:
   - example
 image:
