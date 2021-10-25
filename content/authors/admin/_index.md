@@ -1,6 +1,6 @@
 ---
 title: Sihan Chen
-role: Ph.D student, MIT Department of Brain and Cognitive Sciences
+role: Ph.D student, Department of Brain and Cognitive Sciences
 avatar_filename: avatar.jpg
 bio: ""
 interests:
