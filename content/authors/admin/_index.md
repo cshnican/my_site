@@ -25,7 +25,7 @@ social:
     link: https://www.linkedin.com/in/cshnican/
 organizations:
   - name: Massachusetts Institute of Technology
-    url: mit.edu
+    url: www.mit.edu
 education:
   courses:
     - course: B.S., Mechanical Engineering
