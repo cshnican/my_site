@@ -24,7 +24,7 @@ tags:
   - corpus study
   - computational linguistics
 projects: []
-date: 2020-03-26T07:20:09.747Z
+date: 2022-03-26T07:20:09.747Z
 url_slides: https://drive.google.com/file/d/1KddrIQ80_r72aMoTCBr7DORLqNUrbFlJ/view?usp=sharing
 publishDate: 2020-03-16T00:00:00.000Z
 url_poster: ""
