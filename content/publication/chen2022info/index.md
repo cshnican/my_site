@@ -25,7 +25,7 @@ tags:
   - computational linguistics
 projects: []
 date: 2020-03-26T07:20:09.747Z
-url_slides: https://drive.google.com/file/d/1_uKQh8zJqcabWGZeqvNDPj8Bhbdh5zRy/view?usp=sharing
+url_slides: https://drive.google.com/file/d/1KddrIQ80_r72aMoTCBr7DORLqNUrbFlJ/view?usp=sharing
 publishDate: 2020-03-16T00:00:00.000Z
 url_poster: ""
 url_code: ""
