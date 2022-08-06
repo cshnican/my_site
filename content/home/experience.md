@@ -22,6 +22,16 @@ subtitle:
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+
+  - title: Teaching Assistant - 9.59 Lab in Psycholinguistics 
+    company: MIT Brain and Cognitive Sciences
+    company_url: ''
+    # company_logo: org-gc
+    location: Cambridge, MA
+    date_start: '2023-02-01'
+    date_end: '2023-05-20'
+    description: |2-
+    
   - title: Teaching Assistant - 9.66 Computational Cognitive Science 
     company: MIT Brain and Cognitive Sciences
     company_url: ''
