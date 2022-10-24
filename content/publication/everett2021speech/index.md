@@ -29,7 +29,7 @@ publication: "in *Scientific Reports* 11: 1066 (2021)"
 summary: ""
 url_dataset: ""
 url_project: ""
-publication_short: ""
+publication_short: "https://news.miami.edu/stories/2021/01/scholars-link-diet,-dentition,-and-linguistics.html"
 url_source: ""
 url_video: ""
 title: Speech adapts to differences in dentition within and across populations
