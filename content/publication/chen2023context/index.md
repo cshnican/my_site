@@ -3,7 +3,7 @@ abstract: "The process of sentence comprehension must allow for the possibility 
 slides: ""
 url_pdf: https://www.sciencedirect.com/science/article/pii/S0010027723001373?dgcid=author
 publication_types:
-  - "1"
+  - "2"
 authors:
   - Sihan Chen
   - Sarah Nathaniel
