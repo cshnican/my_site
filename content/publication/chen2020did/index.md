@@ -31,7 +31,7 @@ url_source: ""
 url_video: ""
 title: Did post-neolithic changes in bite configuration impact speech? A new approach to the question
 doi: ""
-featured: true
+featured: false
 tags:
   - phonetics
   - evolution of language
