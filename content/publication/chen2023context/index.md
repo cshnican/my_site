@@ -30,7 +30,7 @@ projects: []
     )"
   focal_point: ""
   preview_only: false
-  filename: featured.jpg -->
+  filename: /1-s2.0-S0010027723001373-gr2_lrg.jpg -->
 date: 2020-03-16T07:20:09.747Z
 url_slides: ""
 publishDate: 2020-03-16T00:00:00.000Z
