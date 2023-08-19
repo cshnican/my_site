@@ -11,7 +11,7 @@ goal asymmetry. We further show that the typological data are better explained b
 consistency into the Information Bottleneck framework, which is jointly optimized along with informativity
 and complexity."
 slides: ""
-url_pdf: "chen2023_deictics.pdf"
+url_pdf: "publication/chen2023deictics/chen2023_deictics.pdf"
 publication_types:
   - "2"
 authors:
