@@ -21,7 +21,7 @@ authors:
 author_notes: []
 publication: "in *Cognition* 240: 105505 (2023)"
 summary: ""
-url_dataset: ""
+url_dataset: "https://github.com/cshnican/spatial_demonstratives"
 url_project: ""
 publication_short: ""
 url_source: ""
@@ -39,7 +39,7 @@ image:
   focal_point: ""
   preview_only: false
   filename: ""
-date: 2021-01-12T07:20:09.747Z
+date: 2023-08-19T07:20:09.747Z
 url_slides: ""
 publishDate: 2023-08-18T00:00:00.000Z
 url_poster: ""
