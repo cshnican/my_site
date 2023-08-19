@@ -15,8 +15,9 @@ url_pdf: ""
 publication_types:
   - "2"
 authors:
-  - Caleb Everett
   - Sihan Chen
+  - Richard Futrell
+  - Kyle Mahowald
 author_notes: []
 publication: "in *Cognition* 240: 105505 (2023)"
 summary: ""
