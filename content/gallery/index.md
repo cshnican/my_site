@@ -12,6 +12,11 @@ comments: false  # Show comments?
 header:
   caption: ""
   image: ""
+
+gallery_item:
+  - album: star_pics
+    image: IMG_4468.jpg
+    caption: A shooting star passing by the Andromeda galaxy and the milky way. 8/11/2023 @ Wellsfleet, MA, USA
 ---
 
 ## Gallery
@@ -22,8 +27,5 @@ I'm also broadly interested in photography (not professionally though). I use a 
 
 I'm always amazed by the night sky, especially by the immense number of stars and the milky way in summer nights. Below are some pictures I took:
 
-{{< gallery album="stars" resize_options="250x250" >}}
-gallery_item:
-  - album: star_pics
-    image: IMG_4468.jpg
-    caption: A shooting star passing by the Andromeda galaxy and the milky way. 8/11/2023 @ Wellsfleet, MA, USA
+{{< gallery album="stars" resize_options="800x600" >}}
+
