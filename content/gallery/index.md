@@ -22,7 +22,7 @@ I'm also broadly interested in photography (not professionally though). I use a 
 
 I'm always amazed by the night sky, especially by the immense number of stars and the milky way in summer nights. Below are some pictures I took:
 
-{{< gallery album="star_pics" >}}
+{{< gallery album="star_pics" resize_options="250x250" >}}
 gallery_item:
   - album: star_pics
     image: IMG_4468.jpg
