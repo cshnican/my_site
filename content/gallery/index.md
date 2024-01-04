@@ -17,9 +17,10 @@ gallery_item:
   - album: star_pics
     image: IMG_4468.jpg
     caption: A shooting star passing by the Andromeda galaxy and the milky way. 8/11/2023 @ Wellsfleet, MA, USA
+  - album: star_pics
+    image: IMG_2999.jpg
+    caption: The milky way. 9/1/2022 @ Bar Harbor, ME, USA
 ---
-
-## Gallery
 
 I'm also broadly interested in photography (not professionally though). I use a Canon EOS T8i camera, and I have several lenses. I use different ones to capture different scenes.
 
