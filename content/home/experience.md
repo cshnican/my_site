@@ -29,7 +29,7 @@ experience:
     # company_logo: org-gc
     location: Cambridge, MA
     date_start: '2024-02-01'
-    date_end: '2024x-05-20'
+    date_end: '2024-05-20'
     description: |2-
 
   - title: Teaching Assistant - 9.59 Lab in Psycholinguistics 
