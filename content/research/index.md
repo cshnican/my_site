@@ -13,8 +13,7 @@ header:
   caption: ""
   image: ""
 ---
-My general research interest can be generally divided into 2 themes: efficiency and degree of influence. This section will expand as time progresses.
-
+I'm broadly interested in the question of what made human languages the way they are today. I address this question from a range of perspectives.
 
 ## What are the extra-linguistic factors that influence human languages?
 Traditionally, scholars held the views that languages are roughly equal in complexity, because it is assumed all languages are roughly equally capable of communication. As a result, it is also assumed there is an internal tradeoff of complexity at different levels, notably syntax and morphology, as if one language is more complex in morphology than another, it is expected to be less complex in syntax than another. My studies added to the literature showing that such trade-off is not driven by internal factors, but rather by external factors such as sociopolitical ones. We showed that languages spoken by more exoteric societies tend to have more complex syntax and simpler morphology, and those spoken by more esoteric societies tend to have more complex morphology and simpler syntax.
