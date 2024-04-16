@@ -21,7 +21,7 @@ url_project: ""
 publication_short: ""
 url_source: ""
 url_video: ""
-title: Linguistic correlates of societal variation: A quantitative analysis
+title: "Linguistic correlates of societal variation: A quantitative analysis"
 doi: ""
 featured: false
 tags:
