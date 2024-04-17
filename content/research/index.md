@@ -13,12 +13,21 @@ header:
   caption: ""
   image: ""
 ---
-I'm broadly interested in the question of what made human languages the way they are today. I address this question from a range of perspectives.
+Language is a tool that most of us use every day to communicate our thoughts to others.
+Remarkably, even though all of us share the same goal of communicating with each other, different people do it in drastically different ways: people from various parts of the world communicate in different languages, and a person without exposure to the language would usually have huge difficulty understanding. 
+Yet, despite the diversity, human languages seem to have a lot in common, as famously noted by Greenberg as Greenberg's linguistic universals.
+For example, if a language has a subject-object-verb order, it tends to also have postpositions, instead of prepositions (e.g. Turkish, Japanese).
+What makes these languages have these properties? 
+I'm mainly interested in uncovering these hidden factors that help shape languages as what they are today.
+Currently, I'm looking at factors such as environmental, societal, and communicational.
+Below is a summary of each.
 
 ## What are the extra-linguistic factors that influence human languages?
 Traditionally, scholars held the views that languages are roughly equal in complexity, because it is assumed all languages are roughly equally capable of communication. As a result, it is also assumed there is an internal tradeoff of complexity at different levels, notably syntax and morphology, as if one language is more complex in morphology than another, it is expected to be less complex in syntax than another. My studies added to the literature showing that such trade-off is not driven by internal factors, but rather by external factors such as sociopolitical ones. We showed that languages spoken by more exoteric societies tend to have more complex syntax and simpler morphology, and those spoken by more esoteric societies tend to have more complex morphology and simpler syntax.
 
 ### Publications under this theme:
+- **Chen, S.**, Gil, D., Gaponov, S., Reifegerste, J., Yuditha, T.l, Tatarinova, T., Progovac, L., and Benítez-Burraco, A. (2024), Linguistic correlates of societal variation: A quantitative analysis. _PLoS ONE_ 19(4): e0300838. 
+- **Chen, S.**, Gil, D., and Benítez-Burraco, A. (2024), More complex societies have more complex kinship lexicons. PsyArXiv: https://osf.io/preprints/psyarxiv/ewhv9
 - **Chen, S.**, Gil, D., Benítez-Burraco, A., (2024), Languages of esoteric societies provide a window into a previous stage
 in the evolution of human languages. _Proceedings to the 15th International Conference on the Evolution of Language_, Madison, WI
 - Gil, D., **Chen, S.**, Benítez-Burraco, A., (2024), The Mekong-Mamberamo Mystery. _Proceedings to the 15th International Conference on the Evolution of Language_, Madison, WI
