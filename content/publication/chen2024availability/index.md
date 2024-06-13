@@ -16,7 +16,7 @@ url_project: ""
 publication_short: ""
 url_source: ""
 url_video: ""
-title: "Availability, informatively and bustiness: Why average corpus measures are an inaccurate guide to surprisal in language"
+title: "Availability, informatively and burstiness: Why average corpus measures are an inaccurate guide to surprisal in language"
 doi: ""
 featured: false
 tags:
