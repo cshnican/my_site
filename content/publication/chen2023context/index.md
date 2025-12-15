@@ -21,8 +21,9 @@ title: The effect of context on noisy-channel sentence comprehension
 doi: ""
 featured: true
 tags:
-  - phonetics
-  - evolution of language
+  - noisy channel
+  - rational inference
+  - pragmatics
 projects: []
 <!-- image:
   caption: "Image credit:
