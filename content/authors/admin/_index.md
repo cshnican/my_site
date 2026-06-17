@@ -40,3 +40,5 @@ superuser: true
 highlight_name: true
 ---
 Hi! I am a Ph.D candidate at [Department of Brain and Cognitive Sciences at MIT](https://bcs.mit.edu). I am currently working in [TedLab](http://tedlab.mit.edu), where I apply quantitative methods to look into many interesting topics related to natural languages. Before, I was an undergraduate student majoring in mechanical engineering at [University of Miami](http://welcome.miami.edu/). Here is my {{% staticref "uploads/CV_Sihan_Chen.pdf" %}}CV{{% /staticref %}}. In September 2026 I will start working as a research support technician (postdoc) at the University of Pempeu Fabra.
+
+Apart from work, I like photography (see the Gallery page) and [translating lyrics](https://lyricstranslate.com/en/translator/cshnican)
