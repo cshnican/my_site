@@ -1,8 +1,8 @@
 ---
 title: Sihan Chen
-role: Ph.D candidate, Department of Brain and Cognitive Sciences
+role: Research Support Technician, Center for Brain and Cognition, la Universitat Pompeu Fabra
 avatar_filename: avatar.jpg
-bio: ""
+bio: "for bio"
 interests:
   - Psycholinguistics
   - Linguistics
@@ -11,7 +11,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:sihanc@mit.edu
+    link: mailto:thesihanchen@gmail.com
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/cshnican
@@ -39,6 +39,8 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-Hi! I am a Ph.D candidate at [Department of Brain and Cognitive Sciences at MIT](https://bcs.mit.edu). I am currently working in [TedLab](http://tedlab.mit.edu), where I apply quantitative methods to look into many interesting topics related to natural languages. Before, I was an undergraduate student majoring in mechanical engineering at [University of Miami](http://welcome.miami.edu/). Here is my {{% staticref "uploads/CV_Sihan_Chen.pdf" %}}CV{{% /staticref %}}. In September 2026 I will start working as a research support technician (postdoc) at the University of Pempeu Fabra.
+Hi! I am a research support technician (postdoc) at [Center of Brain and Cognition](https://www.upf.edu/web/cbc) at [la Universitat Pompeu Fabra](https://www.upf.edu), working with [Damián Blasi](https://www.damianblasi.org/). I am interested in the broad question on what makes languages the way they are today, specifically on how extra-linguistic factors (such as policies, societal structures) affect the structual diversity of language. 
+
+I got my PhD in August 2026 at [Department of Brain and Cognitive Sciences at MIT](https://bcs.mit.edu). During graduate school, I worked with Ted Gibson in [TedLab](http://tedlab.mit.edu). Before grad school, I was an undergraduate student majoring in mechanical engineering at [University of Miami](http://welcome.miami.edu/), but later I developed my interest in language research and worked with [Caleb Everett](https://www.udel.edu/academics/colleges/cas/about-us/college-leadership/caleb-everett/). Here is my {{% staticref "uploads/CV_Sihan_Chen.pdf" %}}CV{{% /staticref %}}. 
 
 Apart from work, I like photography (see the Gallery page) and [translating lyrics](https://lyricstranslate.com/en/translator/cshnican)
