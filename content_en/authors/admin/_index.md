@@ -1,6 +1,6 @@
 ---
 title: Sihan Chen
-role: Research Support Technician, Center for Brain and Cognition, la Universitat Pompeu Fabra
+role: Research Support Technician, Center for Brain and Cognition
 avatar_filename: avatar.jpg
 bio: ""
 interests:
@@ -25,8 +25,8 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/in/cshnican/
 organizations:
-  - name: Massachusetts Institute of Technology
-    url: http://www.mit.edu
+  - name: Universitat Pompeu Fabra
+    url: http://www.upf.edu
 education:
   courses:
     - course: Ph.D. in Cognitive Science
