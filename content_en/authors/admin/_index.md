@@ -2,7 +2,7 @@
 title: Sihan Chen
 role: Research Support Technician, Center for Brain and Cognition, la Universitat Pompeu Fabra
 avatar_filename: avatar.jpg
-bio: "for bio"
+bio: ""
 interests:
   - Psycholinguistics
   - Linguistics
