@@ -17,6 +17,6 @@ el:
    description: Site description in Chinese...
  menu:
    main:
-     - name: 传
+     - name: Βιογραφία
        url: '#about'
        weight: 10
