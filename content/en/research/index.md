@@ -18,11 +18,25 @@ Remarkably, even though all of us share the same goal of communicating with each
 Yet, despite the diversity, human languages seem to have a lot in common, as famously noted by Greenberg as Greenberg's linguistic universals.
 For example, if a language has a subject-object-verb order, it tends to also have postpositions, instead of prepositions (e.g. Turkish, Japanese).
 What makes these languages have these properties? 
-I'm mainly interested in uncovering these hidden factors that help shape languages as what they are today.
-Currently, I'm looking at factors such as environmental, societal, and communicational.
+I'm mainly interested in uncovering these factors that help shape languages as what they are today.
+Currently, I'm looking at environmental, societal, and communicational factors.
 Below is a summary of each.
 
-## What are the extra-linguistic factors that influence human languages?
+## Communicative efficiency of human languages
+Language is an important means for humans to communicate with each other. The meaning intended by the speaker is converted to a string of linguistic signals and then is decoded and recovered by the listener in real time. Communication has been taking place possibly for tens of thousands of years, done by billions of people around the world, but how efficient is it? How does language balance the need of accuracy with the need of conciseness? Using tools in information theory, previous studies showed that color naming systems in a diverse set of languages are near optimal in balancing such two needs. We added to the literature by showing spatial demonstratives – a class of words or phrases describing locations (e.g. “here” and “there” in English), are also near optimal. 
+
+### Publications under this theme:
+- _Chen, S._, Futrell, R., Mahowald, K. (2023), Investigating information-theoretic properties of the typology of spatial demonstratives. _Cognition_, 240, 105505.
+
+## Institutional vs. communicative pressure on human languages
+How do languages achieve communicative efficiency? The mechanism is hypothesized to be organic and bottom-up: language users individually choose a less costly form if it conveys a similar meaning, without an explicit goal of optimizing the communicative efficiency. Then, these individual choices become conventionalized in language. Meanwhile, we live in a society run by various institutions, which carry out policies on what people should and should not do. These policies are purposeful and top-down: they have a clear goal, usually unrelated to language and communication, and everyone is expected to comply with them whether they like them or not. Sometimes these regulations interact with how people use langugaes. What happens when a bottom-up pressure towards communicative effiency is competing against a bottom-up pressure towards order in society? We show that the communicative efficiency may be affected in positive or negative ways.
+
+
+### Publications under this theme:
+- Ramscar, M., _Chen, S._, Futrell, R., and Mahowald, K (2026), Ramscar, M., Chen, S., Futrell, R., & Mahowald, K. (2026). Cross-cultural structures of personal name systems reflect general communicative principles. _Nature Communications_, 17(1), 719.
+- _Chen, S._, Brown, T., Mollica, F., Martínez, E., and Gibson, E. (in review). The conceptual structure of laws leads to legalese, in review.
+
+## What are the environmental / social factors that influence the structual diversity of human languages?
 Traditionally, scholars held the views that languages are roughly equal in complexity, because it is assumed all languages are roughly equally capable of communication. As a result, it is also assumed there is an internal tradeoff of complexity at different levels, notably syntax and morphology, as if one language is more complex in morphology than another, it is expected to be less complex in syntax than another. My studies added to the literature showing that such trade-off is not driven by internal factors, but rather by external factors such as sociopolitical ones. We showed that languages spoken by more exoteric societies tend to have more complex syntax and simpler morphology, and those spoken by more esoteric societies tend to have more complex morphology and simpler syntax.
 
 ### Publications under this theme:
@@ -43,11 +57,7 @@ Using insights from information theory and Bayes theorem, we model sentence comp
 - Zhan, M., **Chen, S.** (equal contributions), Levy, R., Lu, J., Gibson, E. (2023), Rational Sentence Interpretation in Mandarin Chinese. _Cognitive Science_, 47 (12), e13383
 - **Chen, S.**, Nathaniel, S., Ryskin, R., Gibson, E., (2023), The effect of context on noisy-channel sentence comprehension. _Cognition_, 238, 105503.
 
-## Communicative efficiency of human languages
-Language is an important means for humans to communicate with each other. The meaning intended by the speaker is converted to a string of linguistic signals and then is decoded and recovered by the listener in real time. Communication has been taking place possibly for tens of thousands of years, done by billions of people around the world, but how efficient is it? How does language balance the need of accuracy with the need of conciseness? Using tools in information theory, previous studies showed that color naming systems in a diverse set of languages are near optimal in balancing such two needs. We added to the literature by showing spatial demonstratives – a class of words or phrases describing locations (e.g. “here” and “there” in English), are also near optimal. 
 
-### Publications under this theme:
-- _Chen, S._, Futrell, R., Mahowald, K. (2023), Investigating information-theoretic properties of the typology of spatial demonstratives. _Cognition_, 240, 105505.
 
 
 
