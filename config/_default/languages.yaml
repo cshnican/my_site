@@ -14,14 +14,14 @@ el:
  contentDir: content/el
  title: Sihan Chen
  params:
-   description: Site description in Chinese...
+   description: 
  menu:
    main:
      - name: Βιογραφία
        url: '#about'
        weight: 10
      - name: Βιογραφικό σημείωμα
-       url: 'https://sihan-chen.org/uploads/CV_Sihan_Chen.pdf'
+       url: 'https://sihan-chen.org/static/uploads/CV_Sihan_Chen.pdf'
        weight: 10
      - name: Δημοσιεύσεις
        url: './publication/'
