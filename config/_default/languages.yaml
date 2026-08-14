@@ -17,16 +17,16 @@ el:
    description: Site description in Chinese...
  menu:
    main:
-     - name: About
+     - name: Βιογραφία
        url: '#about'
        weight: 10
      - name: Βιογραφικό σημείωμα
-       url: '/uploads/CV_Sihan_Chen.pdf'
+       url: 'https://sihan-chen.org/uploads/CV_Sihan_Chen.pdf'
        weight: 10
      - name: Δημοσιεύσεις
-       url: '/publications/'
+       url: 'https://sihan-chen.org/publication/'
        weight: 50
      - name: Συλλογή εικόνων
-       url: '/gallery'
+       url: 'https://sihan-chen.org/gallery/'
        weight: 50
 
