@@ -21,12 +21,12 @@ el:
        url: '#about'
        weight: 10
      - name: Βιογραφικό σημείωμα
-       url: 'uploads/CV_Sihan_Chen.pdf'
+       url: '/uploads/CV_Sihan_Chen.pdf'
        weight: 10
      - name: Δημοσιεύσεις
-       url: './publications/'
+       url: '/publications/'
        weight: 50
      - name: Συλλογή εικόνων
-       url: './gallery'
+       url: '/gallery'
        weight: 50
 
