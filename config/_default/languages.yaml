@@ -21,7 +21,7 @@ el:
        url: '#about'
        weight: 10
      - name: Βιογραφικό σημείωμα
-       url: 'https://sihan-chen.org/static/uploads/CV_Sihan_Chen.pdf'
+       url: '../uploads/CV_Sihan_Chen.pdf'
        weight: 10
      - name: Δημοσιεύσεις
        url: './publication/'
