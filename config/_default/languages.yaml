@@ -24,9 +24,9 @@ el:
        url: 'https://sihan-chen.org/uploads/CV_Sihan_Chen.pdf'
        weight: 10
      - name: Δημοσιεύσεις
-       url: 'https://sihan-chen.org/publication/'
+       url: './publication/'
        weight: 50
      - name: Συλλογή εικόνων
-       url: 'https://sihan-chen.org/gallery/'
+       url: './gallery/'
        weight: 50
 
