@@ -3,16 +3,40 @@
     var about = document.querySelector("#about .article-style p, .wg-about .article-style p");
     if (!about || about.textContent.indexOf("Hi!") !== 0) return;
 
-    about.innerHTML = about.innerHTML.replace("Hi!", '<span id="rotating-greeting">Hi</span>!');
+    about.innerHTML = about.innerHTML.replace("Hi!", '<span id="rotating-greeting">Hi!</span>');
     var el = document.getElementById("rotating-greeting");
     if (!el) return;
 
-    var greetings = ["Hi", "你好", "Hola", "Ei", "Γεια", "Ciao", "Halò", "Merhaba", "Salut", "Hei"];
-    var index = 0;
+    var greetings = ["Hi", "你好", "Hola", "Γεια", "Ciao", "Halò", "Merhaba", "Salut", "Hei"];
 
+    function lockWidth() {
+      var probe = document.createElement("span");
+      probe.style.visibility = "hidden";
+      probe.style.position = "absolute";
+      probe.style.whiteSpace = "nowrap";
+      el.parentNode.insertBefore(probe, el);
+
+      var maxWidth = 0;
+      for (var i = 0; i < greetings.length; i++) {
+        probe.textContent = greetings[i] + "!";
+        maxWidth = Math.max(maxWidth, probe.offsetWidth);
+      }
+      el.parentNode.removeChild(probe);
+
+      el.style.display = "inline-block";
+      el.style.whiteSpace = "nowrap";
+      el.style.width = maxWidth + "px";
+    }
+
+    lockWidth();
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(lockWidth);
+    }
+
+    var index = 0;
     setInterval(function () {
       index = (index + 1) % greetings.length;
-      el.textContent = greetings[index];
-    }, 5000);
+      el.textContent = greetings[index] + "!";
+    }, 3000);
   })();
 </script>
