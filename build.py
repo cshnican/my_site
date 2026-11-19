@@ -3,8 +3,9 @@
 
 from html import escape
 import re
+import shutil
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "content"
@@ -692,6 +693,42 @@ def pages_for(site):
     return pages, papers
 
 
+def assemble_publish():
+    """Copy the generated site into public/ for Netlify.
+
+    Netlify will not deploy the repository root, and the pages link to photos,
+    PDFs, and the CV under old_site/.
+    """
+    dest = ROOT / "public"
+    if dest.exists():
+        shutil.rmtree(dest)
+    dest.mkdir()
+    for name in ("index.html", "research.html", "publications.html", "gallery.html", "site.css", "site.js"):
+        shutil.copy2(ROOT / name, dest / name)
+    shutil.copytree(ROOT / "el", dest / "el")
+
+    copied = 0
+    for html in [dest / "index.html", dest / "research.html", dest / "publications.html", dest / "gallery.html", * (dest / "el").glob("*.html")]:
+        for match in re.findall(r'(?:href|src)="([^"]+)"', html.read_text()):
+            path = unquote(match.split("?", 1)[0].split("#", 1)[0])
+            if path.startswith(("http://", "https://", "mailto:", "#")):
+                continue
+            while path.startswith("../"):
+                path = path[3:]
+            if not path.startswith("old_site/"):
+                continue
+            src = ROOT / path
+            target = dest / path
+            if target.exists():
+                continue
+            if not src.is_file():
+                raise SystemExit(f"Missing asset for publish: {path}")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, target)
+            copied += 1
+    print(f"assembled public/ with {copied} assets")
+
+
 def main():
     sources = [CONTENT / "en" / "site.md", CONTENT / "el" / "site.md"]
     for path in sources:
@@ -704,6 +741,7 @@ def main():
             print(f"wrote {out.relative_to(ROOT) / name}")
         selected = sum(1 for paper in papers if paper["selected"] is not None)
         print(f"{site['lang']}: {len(papers)} publications, {selected} selected on the homepage")
+    assemble_publish()
 
 
 if __name__ == "__main__":
