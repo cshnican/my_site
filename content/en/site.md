@@ -13,6 +13,7 @@ portrait_alt: Sihan Chen, standing on a beach at dusk
 - [Research](research.html)
 - [Publications](publications.html)
 - [Work experience](#experience)
+- [Media](#media)
 - [Gallery](gallery.html)
 
 ## Links

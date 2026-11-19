@@ -228,8 +228,8 @@ h1 {
 .portrait {
   grid-column: 1;
   grid-row: 1;
-  width: 96px;
-  height: 96px;
+  width: 152px;
+  height: 152px;
   object-fit: cover;
   object-position: 50% 28%;
   border-radius: 50%;
@@ -343,6 +343,8 @@ h1.page-title {
   text-decoration: none;
 }
 .paper:hover .paper-title { color: var(--accent); }
+.paper.media { grid-template-columns: 72px minmax(0, 1fr); }
+.paper-title a { color: inherit; text-underline-offset: 3px; }
 .year {
   font-family: "DM Mono", ui-monospace, monospace;
   font-size: 0.86rem;

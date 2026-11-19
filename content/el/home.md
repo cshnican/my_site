@@ -40,3 +40,25 @@ SilicoSpine. Τμηματοποίηση εικόνων μαγνητικού συ
 Μου αρέσει η φωτογραφεία και να [μεταφράζω τους στίχους](https://lyricstranslate.com/en/translator/cshnican) από τα ελληνικά στα αγγλικά.
 
 [Ορίστε μερικές από τις εικόνες μου](gallery.html)
+
+## Κάλυψη από τα μέσα
+
+### 2026
+[Why Do Lawyers Write This Way?](https://betterworld.mit.edu/spectrum/issues/summer-2026/why-do-lawyers-write-this-way/)
+MIT Spectrum
+
+### 2026
+[What's in a name? Information structure parallels discovered across cultures - with repercussions for Asian names](https://phys.org/news/2026-02-parallels-cultures-repercussions-asian.html)
+Phys.org
+
+### 2023
+[Uncovering the invisible pressures shaping language](https://news.mit.edu/2023/sihan-chen-uncovering-invisible-pressures-shaping-language-0627)
+MIT News (MIT)
+
+### 2021
+[Scholars link diet, dentition, and linguistics](https://news.miami.edu/stories/2021/01/scholars-link-diet,-dentition,-and-linguistics.html)
+News@TheU (University of Miami)
+
+### 2019
+[In Search for Hidden Worlds](https://news.miami.edu/stories/2019/03/in-search-of-hidden-worlds.html)
+News@TheU (University of Miami)

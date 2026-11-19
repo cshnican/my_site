@@ -340,6 +340,21 @@ def article_html(blocks):
     return "\n        ".join(parts)
 
 
+def media_html(groups):
+    articles = []
+    for year, title, outlet in groups:
+        articles.append(
+            '<article class="paper media">\n'
+            f'            <span class="year">{escape(year)}</span>\n'
+            "            <div>\n"
+            f'              <span class="paper-title">{inline(title)}</span>\n'
+            f'              <span class="meta">{escape(outlet)}</span>\n'
+            "            </div>\n"
+            "          </article>"
+        )
+    return "\n".join(articles)
+
+
 def cards_html(groups):
     cards = ['<div class="cards">']
     for year, title, detail in groups:
@@ -398,8 +413,8 @@ def page_shell(site, filename, title, main, home=False):
         )
     main_id = ' id="top"' if home else ""
     fonts = FONTS_EL if site["lang"] == "el" else FONTS
-    css = escape(rooted("site.css?v=5", depth), quote=True)
-    script = escape(rooted("site.js?v=5", depth), quote=True)
+    css = escape(rooted("site.css?v=7", depth), quote=True)
+    script = escape(rooted("site.js?v=6", depth), quote=True)
     cv = escape(rooted(site["cv"], depth), quote=True)
     languages = language_menu(site, filename)
     return f"""<!DOCTYPE html>
@@ -500,6 +515,9 @@ def selected_section(papers, site):
 def section_kind(body):
     lines = [line.strip() for line in body.splitlines() if line.strip()]
     if any(line.startswith("### ") for line in lines):
+        groups = parse_year_groups(body)
+        if groups and all(title.lstrip().startswith("[") for _, title, _ in groups):
+            return "media"
         return "cards"
     if lines and all(line.startswith("- ") for line in lines):
         return "interests"
@@ -570,6 +588,17 @@ def build_home(site, papers):
             elif not placed:
                 chunks.insert(-1, papers_html)
                 placed = True
+        elif kind == "media":
+            chunks.append(
+                '      <section id="media">\n'
+                '        <div class="section-head">\n'
+                f"          <h2>{escape(heading)}</h2>\n"
+                "        </div>\n"
+                '        <div class="papers">\n'
+                f"{media_html(parse_year_groups(body))}\n"
+                "        </div>\n"
+                "      </section>"
+            )
         else:
             if not placed:
                 chunks.append(papers_html)

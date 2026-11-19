@@ -14,6 +14,7 @@ switch_label: EN
 
 - [Δημοσιεύσεις](publications.html)
 - [Εργασία](#experience)
+- [ΜΜΕ](#media)
 - [Συλλογή εικόνων](gallery.html)
 
 ## Links
