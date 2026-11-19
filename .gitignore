@@ -3,7 +3,9 @@
 
 # Hugo
 /resources/
+/old_site/resources/
 public/
+/old_site/public/
 jsconfig.json
 node_modules/
 

@@ -1,0 +1,43 @@
+# Research
+
+Language is a tool that most of us use every day to communicate our thoughts to others. Remarkably, even though all of us share the same goal of communicating with each other, different people do it in drastically different ways: people from various parts of the world communicate in different languages, and a person without exposure to the language would usually have huge difficulty understanding. Yet, despite the diversity, human languages seem to have a lot in common, as famously noted by Greenberg as Greenberg's linguistic universals. For example, if a language has a subject-object-verb order, it tends to also have postpositions, instead of prepositions (e.g. Turkish, Japanese). What makes these languages have these properties? I'm mainly interested in uncovering these factors that help shape languages as what they are today. Currently, I'm looking at environmental, societal, and communicational factors. Below is a summary of each.
+
+## Communicative efficiency of human languages
+
+Language is an important means for humans to communicate with each other. The meaning intended by the speaker is converted to a string of linguistic signals and then is decoded and recovered by the listener in real time. Communication has been taking place possibly for tens of thousands of years, done by billions of people around the world, but how efficient is it? How does language balance the need of accuracy with the need of conciseness? Using tools in information theory, previous studies showed that color naming systems in a diverse set of languages are near optimal in balancing such two needs. We added to the literature by showing spatial demonstratives – a class of words or phrases describing locations (e.g. “here” and “there” in English), are also near optimal.
+
+### Publications under this theme:
+
+- *Chen, S.*, Futrell, R., Mahowald, K. (2023), Investigating information-theoretic properties of the typology of spatial demonstratives. *Cognition*, 240, 105505.
+
+## Institutional vs. communicative pressure on human languages
+
+How do languages achieve communicative efficiency? The mechanism is hypothesized to be organic and bottom-up: language users individually choose a less costly form if it conveys a similar meaning, without an explicit goal of optimizing the communicative efficiency. Then, these individual choices become conventionalized in language. Meanwhile, we live in a society run by various institutions, which carry out policies on what people should and should not do. These policies are purposeful and top-down: they have a clear goal, usually unrelated to language and communication, and everyone is expected to comply with them whether they like them or not. Sometimes these regulations interact with how people use langugaes. What happens when a bottom-up pressure towards communicative effiency is competing against a bottom-up pressure towards order in society? We show that the communicative efficiency may be affected in positive or negative ways.
+
+### Publications under this theme:
+
+- Ramscar, M., *Chen, S.*, Futrell, R., and Mahowald, K (2026), Ramscar, M., Chen, S., Futrell, R., & Mahowald, K. (2026). Cross-cultural structures of personal name systems reflect general communicative principles. *Nature Communications*, 17(1), 719.
+- *Chen, S.*, Brown, T., Mollica, F., Martínez, E., and Gibson, E. (in review). The conceptual structure of laws leads to legalese, in review.
+
+## What are the environmental / social factors that influence the structual diversity of human languages?
+
+Traditionally, scholars held the views that languages are roughly equal in complexity, because it is assumed all languages are roughly equally capable of communication. As a result, it is also assumed there is an internal tradeoff of complexity at different levels, notably syntax and morphology, as if one language is more complex in morphology than another, it is expected to be less complex in syntax than another. My studies added to the literature showing that such trade-off is not driven by internal factors, but rather by external factors such as sociopolitical ones. We showed that languages spoken by more exoteric societies tend to have more complex syntax and simpler morphology, and those spoken by more esoteric societies tend to have more complex morphology and simpler syntax.
+
+### Publications under this theme:
+
+- **Chen, S.**, Gil, D., Gaponov, S., Reifegerste, J., Yuditha, T.l, Tatarinova, T., Progovac, L., and Benítez-Burraco, A. (2024), Linguistic correlates of societal variation: A quantitative analysis. *PLoS ONE* 19(4): e0300838.
+- **Chen, S.**, Gil, D., and Benítez-Burraco, A. (2024), More complex societies have more complex kinship lexicons. PsyArXiv: [https://osf.io/preprints/psyarxiv/ewhv9](https://osf.io/preprints/psyarxiv/ewhv9)
+- **Chen, S.**, Gil, D., Benítez-Burraco, A., (2024), Languages of esoteric societies provide a window into a previous stage in the evolution of human languages. *Proceedings to the 15th International Conference on the Evolution of Language*, Madison, WI
+- Gil, D., **Chen, S.**, Benítez-Burraco, A., (2024), The Mekong-Mamberamo Mystery. *Proceedings to the 15th International Conference on the Evolution of Language*, Madison, WI
+- **Chen, S**, Benítez-Burraco, A., Cahuana, C., Gil, D., Progovac, L., Reifegerste, J., Yuditha, T., & Tatarinova, T. (2023), Cognitive and genetic correlates of a single macro-parameter of crosslinguistics variation. *Protolang 2023*, Rome, Italy, September 27, 2023
+- Everett, C., **Chen, S (2021)**, Speech adapts to differences in dentition within and across populations. *Scientific Reports* 11, 1066
+- **Chen, S.** & Everett, C. (2020), Did Post-Neolithic Changes in Bite Configuration Impact Speech? A New Approach to the Question. *Proceedings to the 13th International Conference on the Evolution of Language*, Brussels, Belgium
+
+## How do language users comprehend implausible sentences?
+
+Using insights from information theory and Bayes theorem, we model sentence comprehension as a rational process: when we encounter a sentence, we consider 1) the probability of an interpretation and 2) the likelihood of such interpretation to result in our perceived signal due to noise. We’ve tested this framework, termed the noisy-channel framework in multiple studies and the results were robust across languages and modalities. My studies contributed to this framework in two ways: we showed that by adding a supportive context, comprehenders are more likely to adopt a more plausible, non-literal interpretation when they encounter an implausible sentence, compared to adding a non-supportive context or no context. In addition, we tested the framework in novel sentence constructions in Mandarin Chinese and obtained similar results as those in English.
+
+### Publications under this theme:
+
+- Zhan, M., **Chen, S.** (equal contributions), Levy, R., Lu, J., Gibson, E. (2023), Rational Sentence Interpretation in Mandarin Chinese. *Cognitive Science*, 47 (12), e13383
+- **Chen, S.**, Nathaniel, S., Ryskin, R., Gibson, E., (2023), The effect of context on noisy-channel sentence comprehension. *Cognition*, 238, 105503.
