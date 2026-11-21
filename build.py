@@ -413,8 +413,8 @@ def page_shell(site, filename, title, main, home=False):
         )
     main_id = ' id="top"' if home else ""
     fonts = FONTS_EL if site["lang"] == "el" else FONTS
-    css = escape(rooted("site.css?v=7", depth), quote=True)
-    script = escape(rooted("site.js?v=6", depth), quote=True)
+    css = escape(rooted("site.css?v=10", depth), quote=True)
+    script = escape(rooted("site.js?v=7", depth), quote=True)
     cv = escape(rooted(site["cv"], depth), quote=True)
     languages = language_menu(site, filename)
     return f"""<!DOCTYPE html>
@@ -600,24 +600,17 @@ def build_home(site, papers):
                 "      </section>"
             )
         else:
-            if not placed:
-                chunks.append(papers_html)
-                placed = True
             paragraphs = []
             for kind_name, data in parse_blocks(body):
                 if kind_name == "p":
                     paragraphs.append(f"            <p>{inline(data)}</p>")
             aside = (
-                '        <aside class="aside">\n'
-                f"            <h3>{inline(heading)}</h3>\n"
+                '          <aside class="aside">\n'
                 + "\n".join(paragraphs)
                 + "\n          </aside>\n"
-                "      </section>"
             )
-            if chunks and chunks[-1].rstrip().endswith("</section>") and 'id="experience"' in chunks[-1]:
-                chunks[-1] = chunks[-1].rstrip()[: -len("</section>")] + aside
-            else:
-                chunks.append(aside.replace("      </section>", "").rstrip())
+            chunks[0] = chunks[0].rstrip()
+            chunks[0] = chunks[0][: -len("</section>")] + aside + "      </section>"
     if not placed:
         chunks.append(papers_html)
     main = "\n\n".join(chunks)

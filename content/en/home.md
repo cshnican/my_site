@@ -1,5 +1,7 @@
 # Home
 
+Hi!
+
 I am a research support technician (postdoc) working with [Damián Blasi](https://www.damianblasi.org/). I study how extra-linguistic forces, such as policy, social structure, and the pressures of communication, shape the structural diversity of language.
 
 I completed my PhD in August 2026 in the [Department of Brain and Cognitive Sciences at MIT](https://bcs.mit.edu), with Ted Gibson in [TedLab](http://tedlab.mit.edu). Before that I studied mechanical engineering at the [University of Miami](http://welcome.miami.edu/) and began language research with [Caleb Everett](https://www.udel.edu/academics/colleges/cas/about-us/college-leadership/caleb-everett/).
@@ -38,7 +40,7 @@ SilicoSpine. MR segmentation and models of the intervertebral disc
 
 ## Also, outside the lab.
 
-Photography with a Canon EOS T8i (night sky, hiking, cities) and translations of song lyrics.
+Outside work I also do photography with a Canon EOS T8i (night sky, hiking, cities) and translations of song lyrics.
 
 [See a few frames](gallery.html)
 

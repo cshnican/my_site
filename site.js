@@ -56,6 +56,44 @@ drawer.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const greeting = document.querySelector(".lede");
+if (greeting && greeting.textContent.startsWith("Hi!")) {
+  greeting.innerHTML = greeting.innerHTML.replace(
+    "Hi!",
+    '<span id="rotating-greeting">Hi!</span>'
+  );
+  const el = document.getElementById("rotating-greeting");
+  const greetings = ["Hi", "你好", "Hola", "Γεια", "Ciao", "Halò", "Merhaba", "Salut", "Hei"];
+
+  function lockGreetingWidth() {
+    const probe = document.createElement("span");
+    probe.style.visibility = "hidden";
+    probe.style.position = "absolute";
+    probe.style.whiteSpace = "nowrap";
+    el.parentNode.insertBefore(probe, el);
+    let maxWidth = 0;
+    greetings.forEach((word) => {
+      probe.textContent = `${word}!`;
+      maxWidth = Math.max(maxWidth, probe.offsetWidth);
+    });
+    probe.remove();
+    el.style.display = "inline-block";
+    el.style.whiteSpace = "nowrap";
+    el.style.width = `${maxWidth}px`;
+  }
+
+  lockGreetingWidth();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(lockGreetingWidth);
+  }
+
+  let greetingIndex = 0;
+  setInterval(() => {
+    greetingIndex = (greetingIndex + 1) % greetings.length;
+    el.textContent = `${greetings[greetingIndex]}!`;
+  }, 3000);
+}
+
 const papers = [...document.querySelectorAll(".paper")];
 document.querySelectorAll("[data-filter]").forEach((button) => {
   button.addEventListener("click", () => {
