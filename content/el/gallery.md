@@ -40,24 +40,24 @@ IMG_4146.jpg: | Zabriskie Point, CA, USA
 IMG_4559.jpg: | Dyrhóley, Iceland
 IMG_4725.jpg: | Kötlujökull, Iceland
 IMG_4869.jpg: | Dyrhóley, Iceland
-IMG_4904.jpg:
-IMG_5538.jpg:
-IMG_5684.jpg:
-IMG_5993.jpg:
-IMG_6003.jpg:
-IMG_6021.jpg:
-IMG_6104.jpg:
-IMG_6321.jpg:
-IMG_6702.jpg:
-IMG_6848.jpg:
-IMG_7205.jpg:
-IMG_7216.jpg:
-IMG_7226.jpg:
-IMG_7230.jpg:
-IMG_7574.jpg:
-IMG_7605.jpg:
-IMG_8117.jpg:
-IMG_8224.jpg:
+IMG_4904.jpg: | Dyrhóley, Iceland
+IMG_5538.jpg: | Svínafellsjökull, Iceland
+IMG_5684.jpg: | Jökulsárlón, Iceland
+IMG_5993.jpg: | Indjánahöfði, Iceland
+IMG_6003.jpg: | Indjánahöfði, Iceland
+IMG_6021.jpg: | Fagradalsfjall, Iceland
+IMG_6104.jpg: | Cabo da Roca, Portugal
+IMG_6321.jpg: | Ilha Deserta, Portugal
+IMG_6702.jpg: | Bönigen, Switzerland
+IMG_6848.jpg: | Luzern, Switzerland
+IMG_7205.jpg: | Thimari / Θυμάρι, Greece
+IMG_7216.jpg: | Sounio / Σούνιο, Greece
+IMG_7226.jpg: | Sounio / Σούνιο, Greece
+IMG_7230.jpg: | Sounio / Σούνιο, Greece
+IMG_7574.jpg: | Delphi / Δελφοί, Greece
+IMG_7605.jpg: | Delphi / Δελφοί, Greece
+IMG_8117.jpg: | Mykines / Μυκήνες, Greece
+IMG_8224.jpg: | Archaia Korinthos / Αρχαία Κόρινθος, Greece
 
 ## City
 
@@ -66,38 +66,38 @@ IMG_8224.jpg:
 album: city
 alt: Πόλη
 
-IMG_0182.jpg:
-IMG_0263.jpg:
-IMG_0284.jpg:
-IMG_0344.jpg:
-IMG_0346.jpg:
-IMG_0354.jpg:
-IMG_1917.jpg:
-IMG_1965.jpg:
-IMG_1978.jpg:
-IMG_2023.jpg:
-IMG_2048.jpg:
-IMG_3024.jpg:
-IMG_3159.jpg:
-IMG_3166.jpg:
-IMG_3170.jpg:
-IMG_3209.jpg:
-IMG_4801-Edit.png:
-IMG_5448.jpg:
-IMG_5513.jpg:
-IMG_5623.jpg:
-IMG_6016.jpg:
-IMG_6201.jpg:
-IMG_6254.jpg:
-IMG_6255.jpg:
-IMG_6279.jpg:
-IMG_6700.jpg:
-IMG_6747.jpg:
-IMG_6754.jpg:
-IMG_6770.jpg:
-IMG_7325.jpg:
-IMG_7626.jpg:
-IMG_7629.jpg:
-IMG_7682.jpg:
-IMG_7687.jpg:
-IMG_8146.jpg:
+IMG_0182.jpg: | Nesso, Como, Italy
+IMG_0263.jpg: | İstanbul, Türkiye
+IMG_0284.jpg: | İstanbul, Türkiye
+IMG_0344.jpg: | İstanbul, Türkiye
+IMG_0346.jpg: | İstanbul, Türkiye
+IMG_0354.jpg: | İstanbul, Türkiye
+IMG_1917.jpg: | Bratislava, Slovakia
+IMG_1965.jpg: | Bratislava, Slovakia
+IMG_1978.jpg: | Bratislava, Slovakia
+IMG_2023.jpg: | Bratislava, Slovakia
+IMG_2048.jpg: | Vienna, Austria
+IMG_3024.jpg: | Torino, Italy
+IMG_3159.jpg: | Nesso, Como, Italy
+IMG_3166.jpg: | Lugano, Ticino, Switzerland
+IMG_3170.jpg: | Lugano, Ticino, Switzerland
+IMG_3209.jpg: | Lugano, Ticino, Switzerland
+IMG_4801-Edit.png: | Athens, Greece
+IMG_5448.jpg: | Salzburg, Austria
+IMG_5513.jpg: | Ljubljana, Slovenia
+IMG_5623.jpg: | Venezia, Italy
+IMG_6016.jpg: | Lisbon, Portugal
+IMG_6201.jpg: | Porto, Portugal
+IMG_6254.jpg: | Sevilla, Spain
+IMG_6255.jpg: | Sevilla, Spain
+IMG_6279.jpg: | Carmona, Spain
+IMG_6700.jpg: | Fribourg / Freiburg, Switzerland
+IMG_6747.jpg: | Grindelwald, Switzerland
+IMG_6754.jpg: | Vaduz, Lichtenstein
+IMG_6770.jpg: | Vaduz, Lichtenstein
+IMG_7325.jpg: | Athens, Greece
+IMG_7626.jpg: | Arachova, Greece
+IMG_7629.jpg: | Arachova, Greece
+IMG_7682.jpg: | Budapest, Hungary
+IMG_7687.jpg: | Budapest, Hungary
+IMG_8146.jpg: | Nafplio, Greece
