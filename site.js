@@ -13,6 +13,7 @@ themeBtn.addEventListener("click", () => {
   themeBtn.textContent = ink ? darkLabel : lightLabel;
   themeBtn.setAttribute("aria-pressed", String(!ink));
   localStorage.setItem("preview-theme", ink ? "paper" : "ink");
+  root.dispatchEvent(new Event("themechange"));
 });
 
 const langBtn = document.querySelector(".lang-toggle");
@@ -142,6 +143,40 @@ if (lightbox) {
     node.addEventListener("contextmenu", (event) => event.preventDefault());
     node.addEventListener("dragstart", (event) => event.preventDefault());
   });
+}
+
+const mapEl = document.querySelector(".place-map");
+const mapData = document.getElementById("place-map-data");
+if (mapEl && mapData && window.L) {
+  const pins = JSON.parse(mapData.textContent);
+  const map = L.map(mapEl, { scrollWheelZoom: false });
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 19,
+  }).addTo(map);
+  const markers = L.featureGroup();
+  pins.forEach((pin) => {
+    const marker = L.marker([pin.lat, pin.lon], {
+      icon: L.divIcon({
+        className: "pin",
+        iconSize: [6, 6],
+        iconAnchor: [3, 3],
+        tooltipAnchor: [0, -4],
+      }),
+      alt: pin.name,
+      keyboard: true,
+    });
+    const label = document.createElement("span");
+    label.textContent = pin.name;
+    marker.bindTooltip(label, { direction: "top", className: "pin-tip", opacity: 1 });
+    marker.on("add", () => {
+      const el = marker.getElement();
+      if (el) el.setAttribute("aria-label", pin.name);
+    });
+    markers.addLayer(marker);
+  });
+  map.addLayer(markers);
+  if (pins.length) map.fitBounds(markers.getBounds().pad(0.18), { padding: [24, 24] });
 }
 
 const papers = [...document.querySelectorAll(".paper")];

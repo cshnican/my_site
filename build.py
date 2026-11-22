@@ -2,6 +2,7 @@
 """Build the site from the markdown files in content/."""
 
 from html import escape
+import json
 import re
 import shutil
 from pathlib import Path
@@ -371,6 +372,59 @@ def cards_html(groups):
     return "\n".join(cards)
 
 
+# Coordinates for the gallery place names, looked up once so the build stays offline.
+PLACES = {
+    "Acadia National Park, ME, USA": (44.3563, -68.2155),
+    "Cape Cod, MA, USA": (41.7988, -69.9961),
+    "Death Valley National Park, CA, USA": (36.4702, -117.0884),
+    "Eibsee, Bavaria, Germany": (47.4582, 10.9708),
+    "Monastery of Agios Nektarios, Aigina, Greece": (37.7480, 23.4841),
+    "Aigina, Greece": (37.7467, 23.4306),
+    "Lago d'Orta, Piedmont, Italy": (45.8193, 8.3943),
+    "Plateau Rosa, Aosta Valley, Italy": (45.9322, 7.6941),
+    "Lancaster, CA, USA": (34.6981, -118.1366),
+    "Mount Whitney, CA, USA": (36.5786, -118.2921),
+    "Badwater Basin, CA, USA": (36.2303, -116.7674),
+    "Artist's Palette, CA, USA": (36.3636, -116.8024),
+    "Zabriskie Point, CA, USA": (36.4200, -116.8123),
+    "Dyrhóley, Iceland": (63.3988, -19.1266),
+    "Kötlujökull, Iceland": (63.5922, -18.8538),
+    "Svínafellsjökull, Iceland": (64.0227, -16.8027),
+    "Jökulsárlón, Iceland": (64.0783, -16.2274),
+    "Indjánahöfði, Iceland": (63.9274, -21.9925),
+    "Fagradalsfjall, Iceland": (63.8894, -22.2884),
+    "Cabo da Roca, Portugal": (38.7809, -9.4994),
+    "Ilha Deserta, Portugal": (36.9659, -7.8710),
+    "Bönigen, Switzerland": (46.6887, 7.8949),
+    "Luzern, Switzerland": (47.0521, 8.3058),
+    "Thimari / Θυμάρι, Greece": (37.6985, 23.9452),
+    "Sounio / Σούνιο, Greece": (37.6501, 24.0263),
+    "Delphi / Δελφοί, Greece": (38.4812, 22.5005),
+    "Mykines / Μυκήνες, Greece": (37.7292, 22.7544),
+    "Archaia Korinthos / Αρχαία Κόρινθος, Greece": (37.9051, 22.8764),
+    "Nesso, Como, Italy": (45.9114, 9.1571),
+    "İstanbul, Türkiye": (41.0064, 28.9759),
+    "Bratislava, Slovakia": (48.1435, 17.1083),
+    "Vienna, Austria": (48.2084, 16.3725),
+    "Torino, Italy": (45.0678, 7.6825),
+    "Lugano, Ticino, Switzerland": (46.0038, 8.9512),
+    "Athens, Greece": (37.9756, 23.7348),
+    "Salzburg, Austria": (47.7981, 13.0465),
+    "Ljubljana, Slovenia": (46.0500, 14.5069),
+    "Venezia, Italy": (45.4372, 12.3346),
+    "Lisbon, Portugal": (38.7078, -9.1366),
+    "Porto, Portugal": (41.1502, -8.6103),
+    "Sevilla, Spain": (37.3886, -5.9953),
+    "Carmona, Spain": (37.4718, -5.6413),
+    "Fribourg / Freiburg, Switzerland": (46.8056, 7.1613),
+    "Grindelwald, Switzerland": (46.6243, 8.0367),
+    "Vaduz, Lichtenstein": (47.1393, 9.5228),
+    "Arachova, Greece": (38.4801, 22.5842),
+    "Budapest, Hungary": (47.4818, 19.1449),
+    "Nafplio, Greece": (37.5659, 22.8069),
+}
+
+
 def caption_and_place(text):
     text = text.strip()
     if text.startswith("|"):
@@ -407,7 +461,36 @@ def album_html(folder_name, label, default_alt, captions, depth):
     return f'<div class="album" aria-label="{escape(label)}">\n          {body}\n        </div>'
 
 
-def page_shell(site, filename, title, main, home=False):
+def gallery_places(sections):
+    found = []
+    seen = set()
+    for _, body in sections:
+        _, _, captions, _ = parse_gallery_section(body)
+        for text in captions.values():
+            _, place = caption_and_place(text)
+            if place and place not in seen:
+                seen.add(place)
+                found.append(place)
+    return found
+
+
+def map_html(places, lang):
+    missing = [place for place in places if place not in PLACES]
+    if missing:
+        raise SystemExit("No map coordinates for:\n" + "\n".join(missing))
+    pins = [
+        {"name": place, "lat": PLACES[place][0], "lon": PLACES[place][1]}
+        for place in places
+    ]
+    payload = json.dumps(pins, ensure_ascii=False).replace("<", "\\u003c")
+    label = "Τοποθεσίες" if lang == "el" else "Places"
+    return (
+        f'        <div class="place-map" role="region" aria-label="{escape(label)}"></div>\n'
+        f'        <script type="application/json" id="place-map-data">{payload}</script>'
+    )
+
+
+def page_shell(site, filename, title, main, home=False, extra_head="", extra_scripts=""):
     depth = depth_of(site)
     brand_href = "#top" if home else "index.html"
     nav_label = "Κύρια" if site["lang"] == "el" else "Primary"
@@ -435,8 +518,8 @@ def page_shell(site, filename, title, main, home=False):
         )
     main_id = ' id="top"' if home else ""
     fonts = FONTS_EL if site["lang"] == "el" else FONTS
-    css = escape(rooted("site.css?v=12", depth), quote=True)
-    script = escape(rooted("site.js?v=9", depth), quote=True)
+    css = escape(rooted("site.css?v=16", depth), quote=True)
+    script = escape(rooted("site.js?v=13", depth), quote=True)
     cv = escape(rooted(site["cv"], depth), quote=True)
     languages = language_menu(site, filename)
     return f"""<!DOCTYPE html>
@@ -448,6 +531,7 @@ def page_shell(site, filename, title, main, home=False):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="{fonts}" rel="stylesheet">
+{extra_head}
   <link rel="stylesheet" href="{css}">
 </head>
 <body>
@@ -481,6 +565,7 @@ def page_shell(site, filename, title, main, home=False):
       <span><a href="mailto:{escape(email, quote=True)}">{escape(email)}</a>{escape(footer_note)}</span>
     </div>
   </footer>
+{extra_scripts}
   <script src="{script}"></script>
 </body>
 </html>
@@ -685,6 +770,9 @@ def build_gallery(site):
         lead.append(f"          <p{css}>{inline(data)}</p>")
     lead.append("        </div>")
     parts.append("\n".join(lead))
+    places = gallery_places(sections)
+    if places:
+        parts.append(map_html(places, site.get("lang", "en")))
     for heading, body in sections:
         album, default_alt, captions, prose = parse_gallery_section(body)
         copy = [
@@ -712,7 +800,19 @@ def build_gallery(site):
         "        </div>"
     )
     parts.append("      </section>")
-    return page_shell(site, "gallery.html", f"{title} — {site['name']}", "\n".join(parts))
+    extra_head = ""
+    extra_scripts = ""
+    if places:
+        extra_head = """  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">"""
+        extra_scripts = """  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>"""
+    return page_shell(
+        site,
+        "gallery.html",
+        f"{title} — {site['name']}",
+        "\n".join(parts),
+        extra_head=extra_head,
+        extra_scripts=extra_scripts,
+    )
 
 
 def load_site(path):

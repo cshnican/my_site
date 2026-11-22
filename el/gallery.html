@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../site.css?v=12">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="../site.css?v=16">
 </head>
 <body>
   <div class="chrome">
@@ -47,6 +48,8 @@
           <h1 class="page-title">Συλλογή εικόνων</h1>
           <p class="lead">Μου ενδιαφέρει κι η φωτογραφία. Χρησιμοποιώ μια Canon EOS T8i και έχω μερικούς φωτογραφικούς φακούς. Επιλέγω διαφορετικούς φακούς ανάλογα με τη περίπτωση.</p>
         </div>
+        <div class="place-map" role="region" aria-label="Τοποθεσίες"></div>
+        <script type="application/json" id="place-map-data">[{"name": "Acadia National Park, ME, USA", "lat": 44.3563, "lon": -68.2155}, {"name": "Cape Cod, MA, USA", "lat": 41.7988, "lon": -69.9961}, {"name": "Death Valley National Park, CA, USA", "lat": 36.4702, "lon": -117.0884}, {"name": "Eibsee, Bavaria, Germany", "lat": 47.4582, "lon": 10.9708}, {"name": "Monastery of Agios Nektarios, Aigina, Greece", "lat": 37.748, "lon": 23.4841}, {"name": "Aigina, Greece", "lat": 37.7467, "lon": 23.4306}, {"name": "Lago d'Orta, Piedmont, Italy", "lat": 45.8193, "lon": 8.3943}, {"name": "Plateau Rosa, Aosta Valley, Italy", "lat": 45.9322, "lon": 7.6941}, {"name": "Lancaster, CA, USA", "lat": 34.6981, "lon": -118.1366}, {"name": "Mount Whitney, CA, USA", "lat": 36.5786, "lon": -118.2921}, {"name": "Badwater Basin, CA, USA", "lat": 36.2303, "lon": -116.7674}, {"name": "Artist's Palette, CA, USA", "lat": 36.3636, "lon": -116.8024}, {"name": "Zabriskie Point, CA, USA", "lat": 36.42, "lon": -116.8123}, {"name": "Dyrhóley, Iceland", "lat": 63.3988, "lon": -19.1266}, {"name": "Kötlujökull, Iceland", "lat": 63.5922, "lon": -18.8538}, {"name": "Svínafellsjökull, Iceland", "lat": 64.0227, "lon": -16.8027}, {"name": "Jökulsárlón, Iceland", "lat": 64.0783, "lon": -16.2274}, {"name": "Indjánahöfði, Iceland", "lat": 63.9274, "lon": -21.9925}, {"name": "Fagradalsfjall, Iceland", "lat": 63.8894, "lon": -22.2884}, {"name": "Cabo da Roca, Portugal", "lat": 38.7809, "lon": -9.4994}, {"name": "Ilha Deserta, Portugal", "lat": 36.9659, "lon": -7.871}, {"name": "Bönigen, Switzerland", "lat": 46.6887, "lon": 7.8949}, {"name": "Luzern, Switzerland", "lat": 47.0521, "lon": 8.3058}, {"name": "Thimari / Θυμάρι, Greece", "lat": 37.6985, "lon": 23.9452}, {"name": "Sounio / Σούνιο, Greece", "lat": 37.6501, "lon": 24.0263}, {"name": "Delphi / Δελφοί, Greece", "lat": 38.4812, "lon": 22.5005}, {"name": "Mykines / Μυκήνες, Greece", "lat": 37.7292, "lon": 22.7544}, {"name": "Archaia Korinthos / Αρχαία Κόρινθος, Greece", "lat": 37.9051, "lon": 22.8764}, {"name": "Nesso, Como, Italy", "lat": 45.9114, "lon": 9.1571}, {"name": "İstanbul, Türkiye", "lat": 41.0064, "lon": 28.9759}, {"name": "Bratislava, Slovakia", "lat": 48.1435, "lon": 17.1083}, {"name": "Vienna, Austria", "lat": 48.2084, "lon": 16.3725}, {"name": "Torino, Italy", "lat": 45.0678, "lon": 7.6825}, {"name": "Lugano, Ticino, Switzerland", "lat": 46.0038, "lon": 8.9512}, {"name": "Athens, Greece", "lat": 37.9756, "lon": 23.7348}, {"name": "Salzburg, Austria", "lat": 47.7981, "lon": 13.0465}, {"name": "Ljubljana, Slovenia", "lat": 46.05, "lon": 14.5069}, {"name": "Venezia, Italy", "lat": 45.4372, "lon": 12.3346}, {"name": "Lisbon, Portugal", "lat": 38.7078, "lon": -9.1366}, {"name": "Porto, Portugal", "lat": 41.1502, "lon": -8.6103}, {"name": "Sevilla, Spain", "lat": 37.3886, "lon": -5.9953}, {"name": "Carmona, Spain", "lat": 37.4718, "lon": -5.6413}, {"name": "Fribourg / Freiburg, Switzerland", "lat": 46.8056, "lon": 7.1613}, {"name": "Grindelwald, Switzerland", "lat": 46.6243, "lon": 8.0367}, {"name": "Vaduz, Lichtenstein", "lat": 47.1393, "lon": 9.5228}, {"name": "Arachova, Greece", "lat": 38.4801, "lon": 22.5842}, {"name": "Budapest, Hungary", "lat": 47.4818, "lon": 19.1449}, {"name": "Nafplio, Greece", "lat": 37.5659, "lon": 22.8069}]</script>
         <div class="copy">
           <h2>Astrophotography</h2>
           <p>Ο νυχτερινός ουρανός πάντα με μαγεύει, ιδιαίτερα τα τόσα πολλά του αστέρια και ο Γαλαξίας. Ορίστε μερικές από τις εικόνες μου.</p>
@@ -161,6 +164,7 @@
       <span><a href="mailto:thesihanchen@gmail.com">thesihanchen@gmail.com</a></span>
     </div>
   </footer>
-  <script src="../site.js?v=9"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="../site.js?v=13"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ selected: efficiency
 
 `selected` is optional. Leave it off and the paper stays on the Publications page only. Words after `selected:` are the homepage filters. The ones in use now are `efficiency`, `society`, and `comprehension`.
 
-In gallery sections, `album: city` points at a folder of photos. A line like `IMG_2999.jpg: The Milky Way` sets that photo’s description. Add a place after a bar and it appears when someone hovers the photo and under the full-size preview: `IMG_2999.jpg: The Milky Way | Bar Harbor`. A place by itself is fine: `IMG_3137.jpg: | Cape Cod`. Photos without a line use the section heading.
+In gallery sections, `album: city` points at a folder of photos. A line like `IMG_2999.jpg: The Milky Way` sets that photo’s description. Add a place after a bar and it appears when someone hovers the photo and under the full-size preview: `IMG_2999.jpg: The Milky Way | Bar Harbor`. A place by itself is fine: `IMG_3137.jpg: | Cape Cod`. Those places are drawn as pins on the map at the top of the gallery. Photos without a line use the section heading.
 
 A media item in `home.md` is a year, a linked title, and the outlet:
 
