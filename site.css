@@ -441,11 +441,107 @@ h1.page-title {
   gap: 12px;
   margin: 18px 0 8px;
 }
+.shot {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: none;
+  color: inherit;
+  cursor: zoom-in;
+  font: inherit;
+  text-align: left;
+}
+.album img,
+.lightbox img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
 .album img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   border-radius: 18px;
+}
+.shot .place {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 10px 12px 11px;
+  background: rgba(7, 16, 14, 0.78);
+  box-shadow: 0 -28px 24px rgba(7, 16, 14, 0.28);
+  color: #f4faf7;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-wrap: pretty;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.shot:hover .place,
+.shot:focus-visible .place { opacity: 1; }
+.lightbox[hidden] { display: none; }
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 28px 20px;
+  background: rgba(7, 16, 14, 0.9);
+}
+.lightbox figure { margin: 0; max-width: min(1100px, 100%); }
+.lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 168px);
+  object-fit: contain;
+  border-radius: 12px;
+}
+.lightbox-caption {
+  max-width: 36rem;
+  margin: 14px auto 0;
+  color: #f4faf7;
+  text-align: center;
+}
+.lightbox-title,
+.lightbox-place {
+  display: block;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+.lightbox-title { font-size: 1.05rem; }
+.lightbox-place {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: rgba(244, 250, 247, 0.84);
+}
+.lightbox-caption.place-only .lightbox-place {
+  margin-top: 0;
+  font-size: 1.02rem;
+  color: #f4faf7;
+}
+.lightbox-caption[hidden],
+.lightbox-title[hidden],
+.lightbox-place[hidden] { display: none; }
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #f4faf7;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .copy {

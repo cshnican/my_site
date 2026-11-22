@@ -94,6 +94,56 @@ if (greeting && greeting.textContent.startsWith("Hi!")) {
   }, 3000);
 }
 
+const lightbox = document.querySelector(".lightbox");
+if (lightbox) {
+  const preview = lightbox.querySelector("img");
+  const captionBox = lightbox.querySelector(".lightbox-caption");
+  const captionLabel = lightbox.querySelector(".lightbox-title");
+  const placeLabel = lightbox.querySelector(".lightbox-place");
+  let currentShot = null;
+
+  function openShot(shot) {
+    const image = shot.querySelector("img");
+    preview.src = image.currentSrc || image.src;
+    preview.alt = image.alt;
+    const caption = shot.dataset.caption || "";
+    const place = shot.dataset.place || "";
+    captionLabel.textContent = caption;
+    captionLabel.hidden = !caption;
+    placeLabel.textContent = place;
+    placeLabel.hidden = !place;
+    captionBox.hidden = !caption && !place;
+    captionBox.classList.toggle("place-only", !caption && !!place);
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    currentShot = shot;
+    lightbox.querySelector("[data-close]").focus();
+  }
+
+  function closeShot() {
+    if (lightbox.hidden) return;
+    lightbox.hidden = true;
+    preview.removeAttribute("src");
+    document.body.style.overflow = "";
+    if (currentShot) currentShot.focus();
+    currentShot = null;
+  }
+
+  document.querySelectorAll(".shot").forEach((shot) => {
+    shot.addEventListener("click", () => openShot(shot));
+  });
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox || event.target.closest("[data-close]")) closeShot();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeShot();
+  });
+  document.querySelectorAll(".shot, .shot img, .lightbox, .lightbox img").forEach((node) => {
+    node.addEventListener("contextmenu", (event) => event.preventDefault());
+    node.addEventListener("dragstart", (event) => event.preventDefault());
+  });
+}
+
 const papers = [...document.querySelectorAll(".paper")];
 document.querySelectorAll("[data-filter]").forEach((button) => {
   button.addEventListener("click", () => {

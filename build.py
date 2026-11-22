@@ -371,6 +371,16 @@ def cards_html(groups):
     return "\n".join(cards)
 
 
+def caption_and_place(text):
+    text = text.strip()
+    if text.startswith("|"):
+        return "", text[1:].strip()
+    caption, separator, place = text.partition(" | ")
+    if not separator:
+        return text, ""
+    return caption.strip(), place.strip()
+
+
 def album_html(folder_name, label, default_alt, captions, depth):
     folder = ALBUMS / folder_name
     if not folder.is_dir():
@@ -378,9 +388,21 @@ def album_html(folder_name, label, default_alt, captions, depth):
     images = sorted(path for path in folder.iterdir() if path.suffix.lower() in IMAGE_SUFFIXES)
     tags = []
     for path in images:
-        alt = captions.get(path.name, default_alt or label)
+        caption, place = caption_and_place(captions.get(path.name, ""))
+        alt = caption or default_alt or label
         src = rooted("old_site/assets/media/albums/" + quote(folder_name) + "/" + quote(path.name), depth)
-        tags.append(f'<img src="{escape(src, quote=True)}" alt="{escape(alt)}">')
+        caption_attr = f' data-caption="{escape(caption, quote=True)}"' if caption else ""
+        place_attr = f' data-place="{escape(place, quote=True)}"' if place else ""
+        place_html = f'<span class="place">{escape(place)}</span>' if place else ""
+        if caption and place:
+            label_text = f"{caption}, {place}"
+        else:
+            label_text = caption or place or alt
+        tags.append(
+            f'<button type="button" class="shot" aria-label="{escape(label_text, quote=True)}"{caption_attr}{place_attr}>'
+            f'<img src="{escape(src, quote=True)}" alt="{escape(alt)}" draggable="false">'
+            f"{place_html}</button>"
+        )
     body = "\n          ".join(tags)
     return f'<div class="album" aria-label="{escape(label)}">\n          {body}\n        </div>'
 
@@ -413,8 +435,8 @@ def page_shell(site, filename, title, main, home=False):
         )
     main_id = ' id="top"' if home else ""
     fonts = FONTS_EL if site["lang"] == "el" else FONTS
-    css = escape(rooted("site.css?v=10", depth), quote=True)
-    script = escape(rooted("site.js?v=7", depth), quote=True)
+    css = escape(rooted("site.css?v=12", depth), quote=True)
+    script = escape(rooted("site.js?v=9", depth), quote=True)
     cv = escape(rooted(site["cv"], depth), quote=True)
     languages = language_menu(site, filename)
     return f"""<!DOCTYPE html>
@@ -676,6 +698,19 @@ def build_gallery(site):
         parts.append("\n".join(copy))
         if album:
             parts.append("        " + album_html(album, heading, default_alt, captions, depth))
+    close = "Κλείσιμο" if site.get("lang") == "el" else "Close"
+    parts.append(
+        '        <div class="lightbox" hidden>\n'
+        f'          <button type="button" class="lightbox-close" data-close aria-label="{escape(close)}">×</button>\n'
+        '          <figure>\n'
+        '            <img alt="" draggable="false">\n'
+        '            <figcaption class="lightbox-caption" hidden>\n'
+        '              <span class="lightbox-title" hidden></span>\n'
+        '              <span class="lightbox-place" hidden></span>\n'
+        "            </figcaption>\n"
+        "          </figure>\n"
+        "        </div>"
+    )
     parts.append("      </section>")
     return page_shell(site, "gallery.html", f"{title} — {site['name']}", "\n".join(parts))
 
